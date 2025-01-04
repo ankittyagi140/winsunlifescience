@@ -1,5 +1,33 @@
 import type { Config } from 'tailwindcss'
 import plugin from 'tailwindcss/plugin'
+import { fontFamily } from 'tailwindcss/defaultTheme'
+
+const textUtilities = {
+  '.text-wrap-balance': {
+    'text-wrap': 'balance'
+  },
+  '.text-wrap-pretty': {
+    'text-wrap': 'pretty'
+  },
+  '.text-clamp-2': {
+    'display': '-webkit-box',
+    '-webkit-line-clamp': '2',
+    '-webkit-box-orient': 'vertical',
+    'overflow': 'hidden'
+  },
+  '.text-clamp-3': {
+    'display': '-webkit-box',
+    '-webkit-line-clamp': '3',
+    '-webkit-box-orient': 'vertical',
+    'overflow': 'hidden'
+  },
+  '.break-words-safe': {
+    'overflow-wrap': 'break-word',
+    'word-wrap': 'break-word',
+    'word-break': 'break-word',
+    'hyphens': 'auto'
+  }
+}
 
 const config: Config = {
   content: [
@@ -65,41 +93,28 @@ const config: Config = {
             }
           }
         }
-      }
+      },
+      animation: {
+        'slide-down': 'slideDown 0.3s ease-out',
+        'mobile-slide-down': 'mobileSlideDown 0.5s ease-out',
+      },
+      keyframes: {
+        slideDown: {
+          '0%': { transform: 'translateY(-100%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        mobileSlideDown: {
+          '0%': { transform: 'translateY(-150%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
     },
   },
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
     plugin(function({ addUtilities }) {
-      const textUtilities = {
-        '.text-wrap-balance': {
-          'text-wrap': 'balance'
-        },
-        '.text-wrap-pretty': {
-          'text-wrap': 'pretty'
-        },
-        '.text-clamp-2': {
-          'display': '-webkit-box',
-          '-webkit-line-clamp': '2',
-          '-webkit-box-orient': 'vertical',
-          'overflow': 'hidden'
-        },
-        '.text-clamp-3': {
-          'display': '-webkit-box',
-          '-webkit-line-clamp': '3',
-          '-webkit-box-orient': 'vertical',
-          'overflow': 'hidden'
-        },
-        '.break-words-safe': {
-          'overflow-wrap': 'break-word',
-          'word-wrap': 'break-word',
-          'word-break': 'break-word',
-          'hyphens': 'auto'
-        }
-      }
-      
-      addUtilities(textUtilities, ['responsive'])
+      addUtilities(textUtilities)
     })
   ],
 }

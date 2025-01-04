@@ -2,43 +2,16 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Winsunn Life Sciences - Pharmaceutical Innovation',
-    template: '%s | Winsunn Life Sciences'
+    template: '%s | Winsunn Life Sciences',
+    default: 'Winsunn Life Sciences - Innovative Pharmaceutical Solutions'
   },
-  description: 'Leading pharmaceutical company dedicated to innovative healthcare solutions, research, and improving global health outcomes.',
-  keywords: [
-    'pharmaceutical', 
-    'life sciences', 
-    'healthcare', 
-    'medical research', 
-    'innovative medicine'
-  ],
-  metadataBase: new URL('https://www.winsunnlifesciences.com'),
+  description: 'Winsunn Life Sciences: Pioneering pharmaceutical innovations for global healthcare.',
+  keywords: ['pharmaceutical', 'healthcare', 'medical innovation', 'life sciences'],
+  authors: [{ name: 'Winsunn Life Sciences Team' }],
   openGraph: {
-    type: 'company',
-    locale: 'en_US',
-    url: 'https://www.winsunnlifesciences.com',
-    siteName: 'Winsunn Life Sciences',
-    title: 'Winsunn Life Sciences - Pharmaceutical Innovation',
-    description: 'Leading pharmaceutical company dedicated to innovative healthcare solutions, research, and improving global health outcomes.',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Winsunn Life Sciences - Pharmaceutical Innovation',
-    description: 'Leading pharmaceutical company dedicated to innovative healthcare solutions, research, and improving global health outcomes.',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1
-    }
-  },
-  verification: {
-    google: 'your-google-site-verification-code', // Replace with actual verification code
+    title: 'Winsunn Life Sciences',
+    description: 'Pioneering pharmaceutical innovations for global healthcare',
+    type: 'website',
+    url: 'https://www.winsunnlifesciences.com'
   }
-};
+}

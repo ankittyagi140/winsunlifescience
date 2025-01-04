@@ -1,16 +1,15 @@
-'use client';
+// Tell Next.js this is a client-side component
+"use client"
 
-import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
 import OptimizedImage from '@/components/OptimizedImage'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
-import { useState } from 'react'
 import { ThemeProvider } from '@/context/ThemeContext'
 import { OrganizationStructuredData, WebsiteStructuredData } from '@/components/StructuredData'
 import ScrollToTop from '@/components/ScrollToTop'
-import metadata from './metadata'
+import { useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,14 +18,18 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+    setIsMenuOpen(!isMenuOpen)
+  }
+
+  const closeMenu = () => {
+    setIsMenuOpen(false)
+  }
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="canonical" href="https://www.winsunnlifesciences.com" />
         <OrganizationStructuredData 
@@ -62,13 +65,60 @@ export default function RootLayout({
               <button 
                 onClick={toggleMenu}
                 className="text-white focus:outline-none"
+                aria-label="Toggle Mobile Menu"
               >
-                {isMenuOpen ? (
-                  <XMarkIcon className="h-6 w-6" />
-                ) : (
-                  <Bars3Icon className="h-6 w-6" />
-                )}
+                {isMenuOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
               </button>
+              
+              {/* Mobile Dropdown Menu */}
+              {isMenuOpen && (
+                <div className="fixed top-16 left-0 w-full bg-primary shadow-lg z-50 animate-slide-down">
+                  <nav className="flex flex-col p-4 space-y-2">
+                    <Link 
+                      href="/" 
+                      className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
+                      onClick={closeMenu}
+                    >
+                      Home
+                    </Link>
+                    <Link 
+                      href="/about" 
+                      className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
+                      onClick={closeMenu}
+                    >
+                      About Us
+                    </Link>
+                    <Link 
+                      href="/global-presence" 
+                      className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
+                      onClick={closeMenu}
+                    >
+                      Global Presence
+                    </Link>
+                    <Link 
+                      href="/media" 
+                      className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
+                      onClick={closeMenu}
+                    >
+                      Media
+                    </Link>
+                    <Link 
+                      href="/career" 
+                      className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
+                      onClick={closeMenu}
+                    >
+                      Career
+                    </Link>
+                    <Link 
+                      href="/contact" 
+                      className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
+                      onClick={closeMenu}
+                    >
+                      Contact Us
+                    </Link>
+                  </nav>
+                </div>
+              )}
             </div>
 
             {/* Desktop Navigation */}
@@ -112,56 +162,6 @@ export default function RootLayout({
                 </Link>
               </div>
             </nav>
-
-            {/* Mobile Dropdown Menu */}
-            {isMenuOpen && (
-              <div className="md:hidden absolute top-full left-0 w-full bg-primary shadow-lg">
-                <nav className="flex flex-col p-4 space-y-2">
-                  <Link 
-                    href="/" 
-                    className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
-                    onClick={toggleMenu}
-                  >
-                    Home
-                  </Link>
-                  <Link 
-                    href="/about" 
-                    className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
-                    onClick={toggleMenu}
-                  >
-                    About Us
-                  </Link>
-                  <Link 
-                    href="/global-presence" 
-                    className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
-                    onClick={toggleMenu}
-                  >
-                    Global Presence
-                  </Link>
-                  <Link 
-                    href="/media" 
-                    className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
-                    onClick={toggleMenu}
-                  >
-                    Media
-                  </Link>
-                  <Link 
-                    href="/career" 
-                    className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
-                    onClick={toggleMenu}
-                  >
-                    Career
-                  </Link>
-                  <Link 
-                    href="/contact" 
-                    className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
-                    onClick={toggleMenu}
-                  >
-                    Contact Us
-                  </Link>
-                </nav>
-              </div>
-            )}
           </div>
         </header>
 

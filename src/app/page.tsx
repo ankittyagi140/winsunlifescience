@@ -1,8 +1,11 @@
+import React from 'react';
+import { metadata } from './metadata';
 import Image from 'next/image';
-import HeroCarousel from '@/components/HeroCarousel';
-import ProductCarousel from '@/components/ProductCarousel';
 import Link from 'next/link';
 import SwiperHeroCarousel from '@/components/SwiperHeroCarousel';
+import ProductCarousel from '@/components/ProductCarousel';
+
+export { metadata };
 
 export default function Home() {
   return (
@@ -29,7 +32,7 @@ export default function Home() {
               <p className="text-gray-700 leading-relaxed">
                 Winsunn Life Sciences Private Limited is a new emerging pharmaceutical company. The company has established itself behind the company&apos;s providing comprehensive medical solutions to healthcare professionals. Being recognized among the top pharmaceutical companies in India, we are dedicated to delivering innovative, branded and patent friendly medicines focused and approved by healthcare professionals and patients across the world.
               </p>
-              
+　　 　 　 　
             </div>
           </div>
         </div>
