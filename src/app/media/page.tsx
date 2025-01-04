@@ -1,21 +1,18 @@
 'use client';
 
-import Image from 'next/image';
+import React from 'react';
+import { Metadata } from 'next';
 
-const Media = () => {
+export const metadata: Metadata = {
+  title: 'Media | Winsunn Life Sciences',
+  description: 'Latest news, press releases, and media coverage for Winsunn Life Sciences.'
+};
+
+export default function Media() {
   return (
     <div className="min-h-screen pt-20">
       <div className="container mx-auto px-4">
         <div className="relative w-full h-[600px] rounded-lg overflow-hidden">
-          {/* Background Image */}
-          {/* <Image
-            src="/images/media.jpg"
-            alt="Media Background"
-            fill
-            className="object-cover"
-            priority
-          /> */}
-          
           {/* Overlay with Gradient */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70 flex flex-col items-center justify-center text-white">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-center">
@@ -40,6 +37,4 @@ const Media = () => {
       </div>
     </div>
   );
-};
-
-export default Media;
+}

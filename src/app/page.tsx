@@ -1,8 +1,14 @@
+import React from 'react';
+import { Metadata } from 'next';
 import Image from 'next/image';
-import HeroCarousel from '@/components/HeroCarousel';
-import ProductCarousel from '@/components/ProductCarousel';
 import Link from 'next/link';
 import SwiperHeroCarousel from '@/components/SwiperHeroCarousel';
+import ProductCarousel from '@/components/ProductCarousel';
+
+export const metadata: Metadata = {
+  title: 'Home | Winsunn Life Sciences',
+  description: 'Innovative pharmaceutical solutions driving global healthcare transformation.'
+};
 
 export default function Home() {
   return (

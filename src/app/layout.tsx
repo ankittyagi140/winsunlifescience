@@ -1,5 +1,3 @@
-'use client';
-
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -10,9 +8,24 @@ import { useState } from 'react'
 import { ThemeProvider } from '@/context/ThemeContext'
 import { OrganizationStructuredData, WebsiteStructuredData } from '@/components/StructuredData'
 import ScrollToTop from '@/components/ScrollToTop'
-import metadata from './metadata'
 
 const inter = Inter({ subsets: ['latin'] })
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Winsunn Life Sciences',
+    default: 'Winsunn Life Sciences - Innovative Pharmaceutical Solutions'
+  },
+  description: 'Winsunn Life Sciences: Pioneering pharmaceutical innovations for global healthcare.',
+  keywords: ['pharmaceutical', 'healthcare', 'medical innovation', 'life sciences'],
+  authors: [{ name: 'Winsunn Life Sciences Team' }],
+  openGraph: {
+    title: 'Winsunn Life Sciences',
+    description: 'Pioneering pharmaceutical innovations for global healthcare',
+    type: 'website',
+    url: 'https://www.winsunnlifesciences.com'
+  }
+}
 
 export default function RootLayout({
   children,
@@ -26,7 +39,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="canonical" href="https://www.winsunnlifesciences.com" />
         <OrganizationStructuredData 

@@ -1,28 +1,16 @@
-'use client';
+import React from 'react';
+import { Metadata } from 'next';
 
-import Image from 'next/image';
+export const metadata: Metadata = {
+  title: 'Global Presence | Winsunn Life Sciences',
+  description: 'Explore Winsunn Life Sciences\' global footprint and international reach in pharmaceutical innovation.'
+};
 
-const GlobalPresence = () => {
+export default function GlobalPresence() {
   return (
     <div className="min-h-screen pt-20">
       <div className="container mx-auto px-4">
         <div className="space-y-12">
-          {/* Hero Image */}
-          {/* <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
-            <Image
-              src="/images/global.jpg"
-              alt="Global Presence"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-              <h1 className="text-4xl md:text-5xl font-bold text-white text-center px-4">
-                Global Leader in Healthcare Innovation
-              </h1>
-            </div>
-          </div> */}
-
           {/* Content Section */}
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="prose prose-lg max-w-none">
@@ -99,6 +87,4 @@ const GlobalPresence = () => {
       </div>
     </div>
   );
-};
-
-export default GlobalPresence;
+}
