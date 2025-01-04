@@ -8,7 +8,7 @@ const GlobalPresence = () => {
       <div className="container mx-auto px-4">
         <div className="space-y-12">
           {/* Hero Image */}
-          <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
+          {/* <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
             <Image
               src="/images/global.jpg"
               alt="Global Presence"
@@ -21,7 +21,7 @@ const GlobalPresence = () => {
                 Global Leader in Healthcare Innovation
               </h1>
             </div>
-          </div>
+          </div> */}
 
           {/* Content Section */}
           <div className="max-w-4xl mx-auto space-y-8">

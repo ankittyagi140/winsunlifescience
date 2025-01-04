@@ -8,7 +8,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="about_container space-y-16">
           {/* Hero Image */}
-          <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
+          {/* <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
             <Image
               src="/images/about_us.jpg"
               alt="about us"
@@ -16,7 +16,7 @@ const About = () => {
               className="object-cover"
               priority
             />
-          </div>
+          </div> */}
 
           {/* Vision Section */}
           <div className="vision_section flex flex-col md:flex-row gap-8 items-center">

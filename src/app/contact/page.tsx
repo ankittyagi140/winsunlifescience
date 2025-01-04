@@ -7,7 +7,7 @@ const Contact = () => {
     <div className="min-h-screen pt-20">
       <div className="container mx-auto px-4">
         <div className="contact_container space-y-12">
-          <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
+          {/* <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
             <Image
               src="/images/contact_us.jpg"
               alt="contact us"
@@ -15,7 +15,7 @@ const Contact = () => {
               className="object-cover"
               priority
             />
-          </div>
+          </div> */}
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="contact-card">

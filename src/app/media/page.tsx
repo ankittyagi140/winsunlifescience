@@ -8,13 +8,13 @@ const Media = () => {
       <div className="container mx-auto px-4">
         <div className="relative w-full h-[600px] rounded-lg overflow-hidden">
           {/* Background Image */}
-          <Image
+          {/* <Image
             src="/images/media.jpg"
             alt="Media Background"
             fill
             className="object-cover"
             priority
-          />
+          /> */}
           
           {/* Overlay with Gradient */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70 flex flex-col items-center justify-center text-white">
