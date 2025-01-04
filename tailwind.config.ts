@@ -1,5 +1,33 @@
 import type { Config } from 'tailwindcss'
 import plugin from 'tailwindcss/plugin'
+import { fontFamily } from 'tailwindcss/defaultTheme'
+
+const textUtilities = {
+  '.text-wrap-balance': {
+    'text-wrap': 'balance'
+  },
+  '.text-wrap-pretty': {
+    'text-wrap': 'pretty'
+  },
+  '.text-clamp-2': {
+    'display': '-webkit-box',
+    '-webkit-line-clamp': '2',
+    '-webkit-box-orient': 'vertical',
+    'overflow': 'hidden'
+  },
+  '.text-clamp-3': {
+    'display': '-webkit-box',
+    '-webkit-line-clamp': '3',
+    '-webkit-box-orient': 'vertical',
+    'overflow': 'hidden'
+  },
+  '.break-words-safe': {
+    'overflow-wrap': 'break-word',
+    'word-wrap': 'break-word',
+    'word-break': 'break-word',
+    'hyphens': 'auto'
+  }
+}
 
 const config: Config = {
   content: [
@@ -72,34 +100,7 @@ const config: Config = {
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
     plugin(function({ addUtilities }) {
-      const textUtilities = {
-        '.text-wrap-balance': {
-          'text-wrap': 'balance'
-        },
-        '.text-wrap-pretty': {
-          'text-wrap': 'pretty'
-        },
-        '.text-clamp-2': {
-          'display': '-webkit-box',
-          '-webkit-line-clamp': '2',
-          '-webkit-box-orient': 'vertical',
-          'overflow': 'hidden'
-        },
-        '.text-clamp-3': {
-          'display': '-webkit-box',
-          '-webkit-line-clamp': '3',
-          '-webkit-box-orient': 'vertical',
-          'overflow': 'hidden'
-        },
-        '.break-words-safe': {
-          'overflow-wrap': 'break-word',
-          'word-wrap': 'break-word',
-          'word-break': 'break-word',
-          'hyphens': 'auto'
-        }
-      }
-      
-      addUtilities(textUtilities, ['responsive'])
+      addUtilities(textUtilities)
     })
   ],
 }

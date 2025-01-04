@@ -3,8 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Link from 'next/link'
 import OptimizedImage from '@/components/OptimizedImage'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid'
-import { useState } from 'react'
+import { Bars3Icon } from '@heroicons/react/24/solid'
 import { ThemeProvider } from '@/context/ThemeContext'
 import { OrganizationStructuredData, WebsiteStructuredData } from '@/components/StructuredData'
 import ScrollToTop from '@/components/ScrollToTop'
@@ -32,12 +31,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -73,14 +66,9 @@ export default function RootLayout({
             {/* Mobile Menu Toggle */}
             <div className="md:hidden">
               <button 
-                onClick={toggleMenu}
                 className="text-white focus:outline-none"
               >
-                {isMenuOpen ? (
-                  <XMarkIcon className="h-6 w-6" />
-                ) : (
-                  <Bars3Icon className="h-6 w-6" />
-                )}
+                <Bars3Icon className="h-6 w-6" />
               </button>
             </div>
 
@@ -127,54 +115,46 @@ export default function RootLayout({
             </nav>
 
             {/* Mobile Dropdown Menu */}
-            {isMenuOpen && (
-              <div className="md:hidden absolute top-full left-0 w-full bg-primary shadow-lg">
-                <nav className="flex flex-col p-4 space-y-2">
-                  <Link 
-                    href="/" 
-                    className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
-                    onClick={toggleMenu}
-                  >
-                    Home
-                  </Link>
-                  <Link 
-                    href="/about" 
-                    className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
-                    onClick={toggleMenu}
-                  >
-                    About Us
-                  </Link>
-                  <Link 
-                    href="/global-presence" 
-                    className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
-                    onClick={toggleMenu}
-                  >
-                    Global Presence
-                  </Link>
-                  <Link 
-                    href="/media" 
-                    className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
-                    onClick={toggleMenu}
-                  >
-                    Media
-                  </Link>
-                  <Link 
-                    href="/career" 
-                    className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
-                    onClick={toggleMenu}
-                  >
-                    Career
-                  </Link>
-                  <Link 
-                    href="/contact" 
-                    className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
-                    onClick={toggleMenu}
-                  >
-                    Contact Us
-                  </Link>
-                </nav>
-              </div>
-            )}
+            <div className="md:hidden absolute top-full left-0 w-full bg-primary shadow-lg">
+              <nav className="flex flex-col p-4 space-y-2">
+                <Link 
+                  href="/" 
+                  className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
+                >
+                  Home
+                </Link>
+                <Link 
+                  href="/about" 
+                  className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
+                >
+                  About Us
+                </Link>
+                <Link 
+                  href="/global-presence" 
+                  className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
+                >
+                  Global Presence
+                </Link>
+                <Link 
+                  href="/media" 
+                  className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
+                >
+                  Media
+                </Link>
+                <Link 
+                  href="/career" 
+                  className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
+                >
+                  Career
+                </Link>
+                <Link 
+                  href="/contact" 
+                  className="text-white flex align-center hover:bg-primary-dark p-2 rounded"
+                >
+                  Contact Us
+                </Link>
+              </nav>
+            </div>
           </div>
         </header>
 
