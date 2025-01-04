@@ -93,7 +93,21 @@ const config: Config = {
             }
           }
         }
-      }
+      },
+      animation: {
+        'slide-down': 'slideDown 0.3s ease-out',
+        'mobile-slide-down': 'mobileSlideDown 0.5s ease-out',
+      },
+      keyframes: {
+        slideDown: {
+          '0%': { transform: 'translateY(-100%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        mobileSlideDown: {
+          '0%': { transform: 'translateY(-150%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
     },
   },
   plugins: [
