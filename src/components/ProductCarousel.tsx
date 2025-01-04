@@ -41,12 +41,24 @@ const ProductCarousel = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
+    centerMode: true,
+    centerPadding: '30px',
     responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          centerMode: false
+        }
+      },
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '20px'
         }
       },
       {
@@ -54,6 +66,8 @@ const ProductCarousel = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '30px'
         }
       },
       {
@@ -61,6 +75,8 @@ const ProductCarousel = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '40px'
         }
       }
     ]
@@ -69,20 +85,22 @@ const ProductCarousel = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-primary">Our Products</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-primary break-words">Our Products</h2>
         <div className="product-slider">
           <Slider {...settings}>
             {slideData.map((slide, index) => (
               <div key={index} className="px-4">
-                <div className="bg-white rounded-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
-                  <div className="relative h-48 mb-4">
+                <div className="bg-white rounded-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 flex flex-col items-center">
+                  <div className="relative h-48 w-full mb-4 flex justify-center items-center">
                     <Image
                       src={slide.imgSrc}
                       alt={`Product ${index + 1}`}
                       fill
-                      className="object-contain"
+                      className="object-contain max-w-full max-h-full"
                     />
                   </div>
+                  {/* Optional: Add product name or description if needed */}
+                  {/* <p className="text-center text-sm mt-2 break-words line-clamp-2">Product Name or Description</p> */}
                 </div>
               </div>
             ))}
