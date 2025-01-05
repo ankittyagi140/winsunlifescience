@@ -2,8 +2,8 @@ import React from 'react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Media | Winsunn Life Sciences',
-  description: 'Latest news, press releases, and media coverage for Winsunn Life Sciences.'
+  title: 'Media | winsun Life Sciences',
+  description: 'Latest news, press releases, and media coverage for winsun Life Sciences.'
 };
 
 export default function Media() {
@@ -17,7 +17,7 @@ export default function Media() {
         </div>
         <div className="bg-white shadow-md rounded-lg p-6">
           <h2 className="text-xl font-semibold mb-4">Media Coverage</h2>
-          <p>Explore recent media mentions and articles featuring Winsunn Life Sciences.</p>
+          <p>Explore recent media mentions and articles featuring winsun Life Sciences.</p>
         </div>
         <div className="bg-white shadow-md rounded-lg p-6">
           <h2 className="text-xl font-semibold mb-4">Investor Relations</h2>

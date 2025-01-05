@@ -31,10 +31,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://www.winsunnlifesciences.com" />
+        <link rel="canonical" href="https://www.winsunlifesciences.com" />
         <OrganizationStructuredData 
-          name="Winsunn Life Sciences"
-          url="https://www.winsunnlifesciences.com"
+          name="Winsun Life Sciences"
+          url="https://www.winsunlifesciences.com"
           logo="/logo.png"
           description="Leading pharmaceutical company dedicated to innovative healthcare solutions, research, and improving global health outcomes."
         />
@@ -48,14 +48,14 @@ export default function RootLayout({
               <Link href="/" className="flex items-center space-x-2">
                 <OptimizedImage 
                   src="/images/winsun_logo.jpg" 
-                  alt="Winsunn Life Sciences" 
+                  alt="winsun Life Sciences" 
                   width={50} 
                   height={50}
                   className="rounded-full object-contain" 
                   priority
                 />
                 <span className="text-white font-bold text-sm sm:text-base flex items-center">
-                  Winsunn Life Sciences
+                  Winsun Life Sciences
                 </span>
               </Link>
             </div>
@@ -178,7 +178,7 @@ export default function RootLayout({
                   <div className="mb-4 sm:mb-0">
                     <h3 className="text-base sm:text-xl font-semibold mb-3">About Us</h3>
                     <p className="text-xs sm:text-sm text-gray-200">
-                      Winsunn Life Sciences is dedicated to delivering innovative healthcare solutions across the globe.
+                      winsun Life Sciences is dedicated to delivering innovative healthcare solutions across the globe.
                     </p>
                   </div>
                   <div className="mb-4 sm:mb-0">
@@ -193,7 +193,7 @@ export default function RootLayout({
                   <div className="mb-4 sm:mb-0">
                     <h3 className="text-base sm:text-xl font-semibold mb-3">Contact Info</h3>
                     <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-gray-200">
-                      <li>Email: info@winsunnlife.com</li>
+                      <li>Email: info@winsunlife.com</li>
                       <li className="space-y-1">
                         <p>Winsun Lifesciences Pvt. Ltd.</p>
                         <p>Alaska Tower 6,</p>

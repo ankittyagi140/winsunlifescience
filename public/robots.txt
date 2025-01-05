@@ -1,11 +1,11 @@
-# Robots.txt for Winsunn Life Sciences
+# Robots.txt for winsun Life Sciences
 
 # Allow all crawlers
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.winsunnlifesciences.com/sitemap.xml
+Sitemap: https://www.winsunlifesciences.com/sitemap.xml
 
 # Crawl-delay to prevent overwhelming the server
 Crawl-delay: 10
