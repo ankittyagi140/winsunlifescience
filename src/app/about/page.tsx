@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen pt-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="about_container space-y-16">
           {/* Hero Image */}
@@ -19,7 +19,7 @@ const About = () => {
           </div> */}
 
           {/* Vision Section */}
-          <div className="vision_section flex flex-col md:flex-row gap-8 items-center">
+          <div className="vision_section flex flex-col md:flex-row gap-8 items-center bg-white py-16">
             <div className="vision_text flex-1 space-y-4">
               <h3 className="text-3xl font-bold text-primary">Vision</h3>
               <p className="text-gray-700 leading-relaxed">
@@ -42,7 +42,7 @@ const About = () => {
           </div>
 
           {/* Mission Section */}
-          <div className="mission_section flex flex-col md:flex-row gap-8 items-center">
+          <div className="mission_section flex flex-col md:flex-row gap-8 items-center bg-white py-16">
             <div className="relative w-full md:w-1/2 h-[300px] md:order-1 order-2">
               <Image
                 src="/images/mission.png"
@@ -66,7 +66,7 @@ const About = () => {
           </div>
 
           {/* Core Values Section */}
-          <div className="value_section space-y-8">
+          <div className="value_section space-y-8 bg-white py-16">
             <h3 className="text-3xl font-bold text-primary text-center">Core Values</h3>
             <div className="core_value_images grid grid-cols-2 md:grid-cols-5 gap-8">
               <figure className="value_figure flex flex-col items-center transform hover:scale-105 transition-transform">
