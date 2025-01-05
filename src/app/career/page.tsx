@@ -15,17 +15,17 @@ const jobListings: JobListing[] = [
 
 const CareerPage = () => {
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen pt-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="space-y-12">
           {/* Hero Section */}
-          <div className="text-center space-y-4">
+          <div className="text-center space-y-4 bg-white py-16">
             <h1 className="text-4xl font-bold text-primary">Join Our Team</h1>
             <p className="text-xl text-gray-600">Be part of our mission to improve healthcare</p>
           </div>
 
           {/* Job Listings */}
-          <div className="grid gap-6">
+          <div className="grid gap-6 bg-white">
             {jobListings.map((job, index) => (
               <div 
                 key={index}
@@ -38,12 +38,9 @@ const CareerPage = () => {
                       <p className="text-gray-600">{job.department} · {job.location}</p>
                       <p className="text-gray-600">{job.type}</p>
                     </div>
+                    <p className="mt-4 text-gray-700 leading-relaxed">{job.description}</p>
                   </div>
-                  <button className="bg-primary text-white px-6 py-2 rounded-full hover:bg-primary/90 transition-colors">
-                    Apply Now
-                  </button>
                 </div>
-                <p className="mt-4 text-gray-700">{job.description}</p>
               </div>
             ))}
           </div>

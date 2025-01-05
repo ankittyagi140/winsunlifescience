@@ -13,82 +13,57 @@ export default function Home() {
       {/* Hero Carousel */}
       <SwiperHeroCarousel />
 
-
-      {/* Care at its Best Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="relative overflow-hidden rounded-lg shadow-xl">
-              <Image 
-                src="/images/care_image.png" 
-                alt="Care at its Best" 
-                width={800} 
-                height={600}
-                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-primary">Care at its Best</h2>
-              <p className="text-gray-700 leading-relaxed">
-                winsun Life Sciences Private Limited is a new emerging pharmaceutical company. The company has established itself behind the company&apos;s providing comprehensive medical solutions to healthcare professionals. Being recognized among the top pharmaceutical companies in India, we are dedicated to delivering innovative, branded and patent friendly medicines focused and approved by healthcare professionals and patients across the world.
-              </p>
-　　 　 　 　
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Product Carousel */}
+      <ProductCarousel />
 
       {/* Services Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-primary">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="service-card group" style={{ animationDelay: '0.1s' }}>
-              <div className="shine"></div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
               <Image 
                 src="/images/innovation.jpg" 
                 alt="Innovation" 
                 width={800} 
-                height={600}
-                className="w-full h-full object-cover"
+                height={400}
+                className="w-full h-64 object-cover"
               />
-              <div className="card-content">
-                <h3 className="text-xl font-semibold mt-4 text-white text-center">Innovation</h3>
-                <p className="text-gray-200 mt-4 text-center">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-4 text-primary text-center">Innovation</h3>
+                <p className="text-gray-700 text-center">
                   Our evolving principle is to introduce new products to improve health and care taking of our patients.
                 </p>
               </div>
             </div>
 
-            <div className="service-card group" style={{ animationDelay: '0.2s' }}>
-              <div className="shine"></div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
               <Image 
-                  src="/images/patient_care.jpg" 
-                  alt="Patient Care" 
-                  width={800} 
-                  height={600}
-                  className="mx-auto bg-primary/10 p-3"
-                />
-              <div className="card-content">
-                <h3 className="text-xl font-semibold mt-4 text-white text-center">Patient Care</h3>
-                <p className="text-gray-200 mt-4 text-center">
+                src="/images/patient_care.jpg" 
+                alt="Patient Care" 
+                width={800} 
+                height={400}
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-4 text-primary text-center">Patient Care</h3>
+                <p className="text-gray-700 text-center">
                   Patient care is our core responsibility and we ensure that our patients are receiving safe, quality healthcare.
                 </p>
               </div>
             </div>
 
-            <div className="service-card group" style={{ animationDelay: '0.3s' }}>
-              <div className="shine"></div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
               <Image 
                 src="/images/bringing_smiles.png" 
                 alt="Bringing Smiles" 
                 width={800} 
-                height={600}
-                className="w-full h-full object-cover"
+                height={400}
+                className="w-full h-64 object-cover"
               />
-              <div className="card-content">
-                <h3 className="text-xl font-semibold mt-4 text-white text-center">Bringing Smiles</h3>
-                <p className="text-gray-200 mt-4 text-center">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-4 text-primary text-center">Bringing Smiles</h3>
+                <p className="text-gray-700 text-center">
                   Our vision is to touch lives and bring smiles through providing excellent healthcare.
                 </p>
               </div>
@@ -133,6 +108,29 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Care at its Best Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="relative overflow-hidden rounded-lg shadow-xl">
+              <Image 
+                src="/images/care_image.png" 
+                alt="Care at its Best" 
+                width={800} 
+                height={600}
+                className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div className="space-y-6">
+              <h2 className="text-3xl font-bold text-primary">Care at its Best</h2>
+              <p className="text-gray-700 leading-relaxed">
+                winsun Life Sciences Private Limited is a new emerging pharmaceutical company. The company has established itself behind the company&apos;s providing comprehensive medical solutions to healthcare professionals. Being recognized among the top pharmaceutical companies in India, we are dedicated to delivering innovative, branded and patent friendly medicines focused and approved by healthcare professionals and patients across the world.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Quote Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -141,9 +139,6 @@ export default function Home() {
           </blockquote>
         </div>
       </section>
-
-      {/* Product Carousel */}
-      <ProductCarousel />
     </main>
   );
 }
