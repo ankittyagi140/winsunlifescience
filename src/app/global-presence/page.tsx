@@ -2,8 +2,8 @@ import React from 'react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Global Presence | Winsunn Life Sciences',
-  description: 'Explore Winsunn Life Sciences\' global footprint and international reach in pharmaceutical innovation.'
+  title: 'Global Presence | winsun Life Sciences',
+  description: 'Explore winsun Life Sciences\' global footprint and international reach in pharmaceutical innovation.'
 };
 
 export default function GlobalPresence() {

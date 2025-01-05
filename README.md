@@ -1,9 +1,9 @@
-# Winsunn Life Sciences Website
+# winsun Life Sciences Website
 
 ## Pharmaceutical Web Application
 
 ### 🔬 Project Overview
-A modern, responsive web application for Winsunn Life Sciences, designed to showcase pharmaceutical innovations and services.
+A modern, responsive web application for Winsun Life Sciences, designed to showcase pharmaceutical innovations and services.
 
 ### 🚀 Technologies
 - Next.js 15
@@ -61,5 +61,5 @@ nvm use 18.18.0
 [Your License Here]
 
 ### 📞 Contact
-Winsunn Life Sciences Tech Team
-[contact@winsunnlifesciences.com]
+Winsun Life Sciences Tech Team
+[contact@winsunlifesciences.com]

@@ -22,7 +22,7 @@ export function OrganizationStructuredData({
     description,
     sameAs: [
       // Add social media profile URLs
-      'https://www.linkedin.com/company/winsunn-life-sciences',
+      'https://www.linkedin.com/company/winsun-life-sciences',
       // Add other social media profiles
     ]
   };
@@ -41,11 +41,11 @@ export function WebsiteStructuredData() {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Winsunn Life Sciences',
-    url: 'https://www.winsunnlifesciences.com',
+    name: 'winsun Life Sciences',
+    url: 'https://www.winsunlifesciences.com',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://www.winsunnlifesciences.com/search?q={search_term_string}',
+      target: 'https://www.winsunlifesciences.com/search?q={search_term_string}',
       'query-input': 'required name=search_term_string'
     }
   };

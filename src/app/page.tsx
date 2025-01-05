@@ -30,7 +30,7 @@ export default function Home() {
             <div className="space-y-6">
               <h2 className="text-3xl font-bold text-primary">Care at its Best</h2>
               <p className="text-gray-700 leading-relaxed">
-                Winsunn Life Sciences Private Limited is a new emerging pharmaceutical company. The company has established itself behind the company&apos;s providing comprehensive medical solutions to healthcare professionals. Being recognized among the top pharmaceutical companies in India, we are dedicated to delivering innovative, branded and patent friendly medicines focused and approved by healthcare professionals and patients across the world.
+                winsun Life Sciences Private Limited is a new emerging pharmaceutical company. The company has established itself behind the company&apos;s providing comprehensive medical solutions to healthcare professionals. Being recognized among the top pharmaceutical companies in India, we are dedicated to delivering innovative, branded and patent friendly medicines focused and approved by healthcare professionals and patients across the world.
               </p>
 　　 　 　 　
             </div>
