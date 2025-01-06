@@ -32,6 +32,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="canonical" href="https://www.winsunlifesciences.com" />
+        <meta name="google-site-verification" content="GRZVHzZfe__UZvgjh9fYV-r_z7XhldupZQiO3z1CJjQ" />
         <OrganizationStructuredData 
           name="Winsun Life Sciences"
           url="https://www.winsunlifesciences.com"
