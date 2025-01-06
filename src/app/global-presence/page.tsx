@@ -8,11 +8,11 @@ export const metadata: Metadata = {
 
 export default function GlobalPresence() {
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen pt-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="space-y-12">
           {/* Content Section */}
-          <div className="max-w-4xl mx-auto space-y-8">
+          <div className="max-w-4xl mx-auto space-y-8 bg-white py-16">
             <div className="prose prose-lg max-w-none">
               <h2 className="text-3xl font-bold text-primary mb-6">
                 Global Leader with Quality and Innovation
@@ -45,7 +45,7 @@ export default function GlobalPresence() {
             </div>
 
             {/* Stats Section */}
-            <div className="grid md:grid-cols-3 gap-8 py-12">
+            <div className="grid md:grid-cols-3 gap-8 py-12 bg-white">
               <div className="text-center space-y-2">
                 <div className="text-4xl font-bold text-primary">1</div>
                 <div className="text-gray-600">Countries Served</div>
@@ -61,7 +61,7 @@ export default function GlobalPresence() {
             </div>
 
             {/* Global Reach Section */}
-            <div className="bg-gray-50 rounded-lg p-8">
+            <div className="bg-white rounded-lg p-8">
               <h3 className="text-2xl font-bold text-primary mb-6 text-center">
                 Our Global Reach
               </h3>
