@@ -193,7 +193,7 @@ export default function RootLayout({
                   <div className="mb-4 sm:mb-0">
                     <h3 className="text-base sm:text-xl font-semibold mb-3">Contact Info</h3>
                     <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-gray-200">
-                      <li>Email: info@winsunlife.com</li>
+                      <li>Email: winsunlifesciences@gmail.com</li>
                       <li className="space-y-1">
                         <p>Winsun Lifesciences Pvt. Ltd.</p>
                         <p>Alaska Tower 6,</p>
