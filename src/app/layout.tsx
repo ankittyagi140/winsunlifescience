@@ -188,6 +188,7 @@ export default function RootLayout({
                     <ul className="space-y-1 sm:space-y-2">
                       <li><Link href="/about" className="text-xs sm:text-sm text-gray-200 hover:text-white transition-colors">About Us</Link></li>
                       <li><Link href="/global-presence" className="text-xs sm:text-sm text-gray-200 hover:text-white transition-colors">Global Presence</Link></li>
+                      <li><Link href="/privacy-policy" className="text-xs sm:text-sm text-gray-200 hover:text-white transition-colors">Privacy Policy</Link></li>
                       <li><Link href="/career" className="text-xs sm:text-sm text-gray-200 hover:text-white transition-colors">Careers</Link></li>
                       <li><Link href="/contact" className="text-xs sm:text-sm text-gray-200 hover:text-white transition-colors">Contact</Link></li>
                     </ul>
