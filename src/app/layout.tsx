@@ -33,6 +33,7 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href="https://www.winsunlifesciences.com" />
         <meta name="google-site-verification" content="GRZVHzZfe__UZvgjh9fYV-r_z7XhldupZQiO3z1CJjQ" />
+        <meta name="google-adsense-account" content="ca-pub-6406747327641731"></meta>
         <OrganizationStructuredData 
           name="Winsun Life Sciences"
           url="https://www.winsunlifesciences.com"
