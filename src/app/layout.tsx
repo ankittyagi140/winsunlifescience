@@ -10,6 +10,7 @@ import { ThemeProvider } from '@/context/ThemeContext'
 import { OrganizationStructuredData, WebsiteStructuredData } from '@/components/StructuredData'
 import ScrollToTop from '@/components/ScrollToTop'
 import { useState } from 'react'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -41,6 +42,11 @@ export default function RootLayout({
           description="Leading pharmaceutical company dedicated to innovative healthcare solutions, research, and improving global health outcomes."
         />
         <WebsiteStructuredData />
+        <Script
+          strategy="afterInteractive" 
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6406747327641731"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className={`${inter.className} bg-white dark:bg-gray-900 dark:text-white text-gray-900`}>
         <header className="fixed top-0 left-0 w-full bg-primary shadow-md z-50">
