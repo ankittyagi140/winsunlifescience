@@ -208,6 +208,15 @@
   }
 }
 
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 8px;
@@ -555,4 +564,8 @@ html {
 .swiper-button-prev::after,
 .swiper-button-next::after {
   @apply text-sm;
+}
+
+.animate-slide-from-right {
+  animation: slideFromRight 0.3s ease-out forwards;
 }
