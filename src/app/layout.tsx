@@ -11,7 +11,6 @@ import { OrganizationStructuredData, WebsiteStructuredData } from '@/components/
 import ScrollToTop from '@/components/ScrollToTop'
 import { useState } from 'react'
 import Image from 'next/image'
-import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
