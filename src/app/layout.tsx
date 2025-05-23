@@ -11,6 +11,7 @@ import { OrganizationStructuredData, WebsiteStructuredData } from '@/components/
 import ScrollToTop from '@/components/ScrollToTop'
 import { useState } from 'react'
 import Image from 'next/image'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,7 +35,7 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href="https://www.winsunlifesciences.com" />
         <meta name="google-site-verification" content="GRZVHzZfe__UZvgjh9fYV-r_z7XhldupZQiO3z1CJjQ" />
-        <meta name="google-adsense-account" content="ca-pub-4806696683650106"></meta>
+        <meta name="google-adsense-account" content="ca-pub-1332831285527693"></meta>
         <OrganizationStructuredData 
           name="Winsun Life Sciences"
           url="https://www.winsunlifesciences.com"
