@@ -42,6 +42,8 @@ export default function RootLayout({
           description="Leading pharmaceutical company dedicated to innovative healthcare solutions, research, and improving global health outcomes."
         />
         <WebsiteStructuredData />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1332831285527693"
+     crossOrigin="anonymous"></script>
       </head>
       <body className={`${inter.className} bg-white dark:bg-gray-900 dark:text-white text-gray-900`}>
         <header className="fixed top-0 left-0 w-full bg-primary shadow-md z-50">
