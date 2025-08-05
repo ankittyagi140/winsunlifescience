@@ -20,11 +20,11 @@ const orthoProduct: Product[] = [
   { imgSrc: "/images/coxshine.png" },
   { imgSrc: "/images/coxshine1.png" },
   { imgSrc: "/images/fitpan_dsr.png" },
-  { imgSrc: "/images/gabanusnt.png" },
+  // { imgSrc: "/images/gabanusnt.png" },
   { imgSrc: "/images/Terinok.jpg" },
   { imgSrc: "/images/Nutacalxt.jpg" },
-  { imgSrc: "/images/Preganusm.jpg" },
-  { imgSrc: "/images/Vitzac.jpg" },
+  // { imgSrc: "/images/Preganusm.jpg" },
+  // { imgSrc: "/images/Vitzac.jpg" },
   { imgSrc: "/images/Winsund.jpg" },
 ];
 
@@ -33,21 +33,19 @@ const neuroProduct: Product[] = [
   { imgSrc: "/images/coxshine.png" },
   { imgSrc: "/images/coxshine1.png" },
   { imgSrc: "/images/fitpan_dsr.png" },
-  { imgSrc: "/images/gabanusnt.png" },
+  // { imgSrc: "/images/gabanusnt.png" },
   { imgSrc: "/images/Nutacalxt.jpg" },
-  { imgSrc: "/images/Preganusm.jpg" },
-  { imgSrc: "/images/Vitzac.jpg" },
+  // { imgSrc: "/images/Preganusm.jpg" },
+  // { imgSrc: "/images/Vitzac.jpg" },
   { imgSrc: "/images/Winsund.jpg" },
 ];
 
 const nephroProduct: Product[] = [
   { imgSrc: "/images/cefsita.png" },
   { imgSrc: "/images/fitpan_dsr.png" },
-  { imgSrc: "/images/fosfowin.png" },
   { imgSrc: "/images/Lactiplus.jpg" },
   { imgSrc: "/images/Nutacalxt.jpg" },
-  { imgSrc: "/images/Preganusm.jpg" },
-  { imgSrc: "/images/Vitzac.jpg" },
+
 ];
 
 const cardioProduct: Product[] = [
@@ -55,7 +53,6 @@ const cardioProduct: Product[] = [
   { imgSrc: "/images/fitpan_dsr.png" },
   { imgSrc: "/images/Lactiplus.jpg" },
   { imgSrc: "/images/Nutacalxt.jpg" },
-  { imgSrc: "/images/Preganusm.jpg" },
   { imgSrc: "/images/Winsund.jpg" },
 ];
 
@@ -65,14 +62,13 @@ const rheumatologyProduct: Product[] = [
   { imgSrc: "/images/cefsita.png" },
   { imgSrc: "/images/fitpan_dsr.png" },
   { imgSrc: "/images/Nutacalxt.jpg" },
-  { imgSrc: "/images/Preganusm.jpg" },
   { imgSrc: "/images/Winsund.jpg" },
 ];
 
 const gynaecologistProduct: Product[] = [
   { imgSrc: "/images/cefsita.png" },
   { imgSrc: "/images/fitpan_dsr.png" },
-  { imgSrc: "/images/fosfowin.png" },
+  // { imgSrc: "/images/fosfowin.png" },
   { imgSrc: "/images/Lactiplus.jpg" },
   { imgSrc: "/images/Nutacalxt.jpg" },
   { imgSrc: "/images/Winsund.jpg" },
@@ -94,8 +90,8 @@ const segmentData: Record<string, SegmentData> = {
     description: 'Specialized treatments for rheumatic diseases and musculoskeletal conditions.',
     products: rheumatologyProduct,
   },
-  neuroendocrinology: {
-    title: 'Neuroendocrinology',
+  neurology: {
+    title: 'Neurology',
     description: 'Advanced solutions for neurological and endocrine system disorders.',
     products: neuroProduct,
   },

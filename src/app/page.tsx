@@ -48,7 +48,7 @@ export default function Home() {
               { name: 'Nephrology', icon: '/images/nephro.png', route: '/therapeutic/nephrology' },
               { name: 'Cardiac', icon: '/images/heart.png', route: '/therapeutic/cardiac' },
               { name: 'Rheumatology', icon: '/images/rheumatology.png', route: '/therapeutic/rheumatology' },
-              { name: 'Neuroendocrinologist', icon: '/images/critical_care.png', route: '/therapeutic/neuroendocrinology' },
+              { name: 'Neurology', icon: '/images/critical_care.png', route: '/therapeutic/neurology' },
               { name: 'Gastroenterology', icon: '/images/gastrology.png', route: '/therapeutic/gastroenterology' },
               { name: 'Orthopedics', icon: '/images/ortho.png', route: '/therapeutic/orthopedics' },
               { name: 'Gynaecology', icon: '/images/gynaecology.png', route: '/therapeutic/gynaecology' },
