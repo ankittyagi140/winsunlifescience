@@ -14,10 +14,10 @@ export const slideData = [
   { imgSrc: "/images/coxshine1.png" },
   { imgSrc: "/images/esoniched.png" },
   { imgSrc: "/images/fitpan_dsr.png" },
-  { imgSrc: "/images/gabanusnt.png" },
+  // { imgSrc: "/images/gabanusnt.png" },
   { imgSrc: "/images/Terinok.jpg" },
   { imgSrc: "/images/Nutacalxt.jpg" },
-  { imgSrc: "/images/Preganusm.jpg" },
+  // { imgSrc: "/images/Preganusm.jpg" },
   { imgSrc: "/images/Lactiplus.jpg" },
   { imgSrc: "/images/Mebihepsr.jpg" },
   { imgSrc: "/images/esoniched.png" },
@@ -27,7 +27,7 @@ export const slideData = [
   { imgSrc: "/images/hapigut550.png" },
   { imgSrc: "/images/udnus300.png" },
   { imgSrc: "/images/udnus450.png" },
-  { imgSrc: "/images/Vitzac.jpg" },
+  // { imgSrc: "/images/Vitzac.jpg" },
   { imgSrc: "/images/Winsund.jpg" },
 ];
 
