@@ -87,9 +87,9 @@ export default function PrivacyPolicy() {
             For questions about this Privacy Policy:
           </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Email: <a href="mailto:winsunlifesciences@gmail.com" 
+            <li>Email: <a href="mailto:sales@winsunlifesciences.com" 
                         className="text-blue-600 hover:underline">
-                        winsunlifesciences@gmail.com
+                        sales@winsunlifesciences.com
                       </a></li>
             <li>Mail: Winsun Lifesciences Pvt. Ltd. East Babarpur, Chhajjupur, Delhi - 110032</li>
           </ul>

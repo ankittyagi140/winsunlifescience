@@ -219,7 +219,7 @@ export default function RootLayout({
                       <p className="text-sm text-gray-300 mb-2">Winsun Lifesciences Pvt. Ltd.</p>
                       <p className="text-sm text-gray-300 mb-2">Alaska Tower 6, Rani Bagh, Khandwa Road</p>
                       <p className="text-sm text-gray-300 mb-2">Indore, Madhya Pradesh - 452020</p>
-                      <p className="text-sm text-gray-300">Email: <a href="mailto:winsunlifesciences@gmail.com" className="hover:text-white">winsunlifesciences@gmail.com</a></p>
+                      <p className="text-sm text-gray-300">Email: <a href="mailto:sales@winsunlifesciences.com" className="hover:text-white">sales@winsunlifesciences.com</a></p>
                     </address>
                   </div>
                   
