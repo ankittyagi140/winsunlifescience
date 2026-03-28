@@ -1,23 +1,25 @@
 'use client';
 
-import Image from 'next/image';
+import dynamic from 'next/dynamic';
+
+const ContactMap = dynamic(() => import('@/components/ContactMap'), {
+  ssr: false,
+  loading: () => (
+    <div
+      className="flex h-[400px] w-full items-center justify-center rounded-lg border border-gray-200 bg-gray-50 text-gray-500"
+      aria-hidden
+    >
+      Loading map…
+    </div>
+  ),
+});
 
 const Contact = () => {
   return (
     <div className="min-h-screen pt-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="contact_container space-y-12">
-          {/* <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
-            <Image
-              src="/images/contact_us.jpg"
-              alt="contact us"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div> */}
-
-          <div className="grid md:grid-cols-2 gap-8 bg-white py-8">
+          <div className="grid gap-8 bg-white py-8 md:grid-cols-2">
             <div className="contact-card">
               <h2 className="text-2xl font-semibold text-primary mb-4">Corporate Office</h2>
               <div className="space-y-2 text-gray-700">
@@ -32,19 +34,25 @@ const Contact = () => {
               <h2 className="text-2xl font-semibold text-primary mb-4">Registered Office</h2>
               <div className="space-y-2 text-gray-700">
                 <p className="font-medium">Winsun Lifesciences Pvt. Ltd.</p>
-                <p>East Babarpur, Chhajjupur,</p>
-                <p>Babarpur, Delhi - 110032</p>
+                <p>1449/136, Basement,</p>
+                <p>Durga Puri chowk, Shahdara,</p>
+                <p>Delhi - 110032</p>
               </div>
             </div>
           </div>
 
-          <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
-            <Image
-              src="/images/winsun_location.png"
-              alt="winsun life sciences pvt ltd location"
-              fill
-              className="object-cover"
-            />
+          <div className="space-y-2">
+            <ContactMap />
+            <p className="text-center text-sm text-gray-500">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=1449%2F136+Basement+Durga+Puri+chowk+Shahdara+Delhi+110032"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary underline-offset-2 hover:underline"
+              >
+                Open in Google Maps
+              </a>
+            </p>
           </div>
 
           <div className="contact-card mt-12 bg-white py-8">
@@ -62,7 +70,7 @@ const Contact = () => {
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
-                  <span>info@winsunlifesciences.com</span>
+                  <span>sales@winsunlifesciences.com</span>
                 </div>
               </div>
 

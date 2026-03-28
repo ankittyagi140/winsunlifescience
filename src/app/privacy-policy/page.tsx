@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
           <ul className="list-disc pl-6 mb-6 space-y-3">
             <li><strong>Account</strong> - A unique account created for You to access our Service</li>
             <li><strong>Affiliate</strong> - Entity controlling or controlled by the Company</li>
-            <li><strong>Company</strong> - Winsun Lifesciences Pvt. Ltd, Alaska Tower 6 Rani Bagh, Khandwa Road Indore, Madhya Pradesh - 452020</li>
+            <li><strong>Company</strong> - Winsun Lifesciences Pvt. Ltd, 1449/136, Basement, Durga Puri chowk, Shahdara, Delhi - 110032</li>
             <li><strong>Cookies</strong> - Small files placed on Your device to track browsing history</li>
             <li><strong>Country</strong> - Delhi, India</li>
             <li><strong>Device</strong> - Any device accessing the Service (computers, phones, tablets)</li>
@@ -87,11 +87,11 @@ export default function PrivacyPolicy() {
             For questions about this Privacy Policy:
           </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Email: <a href="mailto:winsunlifesciences@gmail.com" 
+            <li>Email: <a href="mailto:sales@winsunlifesciences.com" 
                         className="text-blue-600 hover:underline">
-                        winsunlifesciences@gmail.com
+                        sales@winsunlifesciences.com
                       </a></li>
-            <li>Mail: Winsun Lifesciences Pvt. Ltd. East Babarpur, Chhajjupur, Delhi - 110032</li>
+            <li>Mail: Winsun Lifesciences Pvt. Ltd., 1449/136, Basement, Durga Puri chowk, Shahdara, Delhi - 110032</li>
           </ul>
         </section>
       </div>
