@@ -19,8 +19,18 @@ const Contact = () => {
     <div className="min-h-screen pt-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="contact_container space-y-12">
-          <div className="bg-white py-8">
-            <div className="contact-card max-w-2xl">
+          <div className="grid gap-8 bg-white py-8 md:grid-cols-2">
+            <div className="contact-card">
+              <h2 className="text-2xl font-semibold text-primary mb-4">Corporate Office</h2>
+              <div className="space-y-2 text-gray-700">
+                <p className="font-medium">Winsun Lifesciences Pvt. Ltd.</p>
+                <p>Alaska Tower 6,</p>
+                <p>Rani Bagh, Khandwa Road</p>
+                <p>Indore, Madhya Pradesh - 452020</p>
+              </div>
+            </div>
+
+            <div className="contact-card">
               <h2 className="text-2xl font-semibold text-primary mb-4">Registered Office</h2>
               <div className="space-y-2 text-gray-700">
                 <p className="font-medium">Winsun Lifesciences Pvt. Ltd.</p>
